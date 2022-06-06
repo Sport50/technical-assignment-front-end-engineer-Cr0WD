@@ -4,7 +4,7 @@ Linkedin: https://bit.ly/denis-orlov
 
 Telegram: https://t.me/Cr0WD
 
-[Demo](https://bit.ly/3mmo9RS) 
+[Video demonstration 📹](https://bit.ly/3mmo9RS) 
 
 ## What was done:
 - ✅ Sessions
