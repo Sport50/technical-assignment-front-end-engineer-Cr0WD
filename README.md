@@ -4,27 +4,29 @@ Linkedin: https://bit.ly/denis-orlov
 
 Telegram: https://t.me/Cr0WD
 
-#[Demo](https://bit.ly/3mmo9RS) 
+[Demo](https://bit.ly/3mmo9RS) 
 
 ## What was done:
-1. Sessions
-2. Auth with magic link over email
-3. State management with Recoil
-4. i18n, All labels are stored in separated atom
-5. Database ORM Foundation
-6. Api for creating / updating / getting list and one item of news
-7. Client Models for Api
-8. Universal client request method
-9. Universal Form state Higher-Order Component
-10. Latest 5 news list page ( controlled by ORM via pagination)
-11. Create / Update page
-12. Fade page navigation with framer-motion 
-13. Meta tags and favicons
+- ✅ Sessions
+- ✅ Auth with magic link over email
+- ✅ State management with Recoil
+- ✅ i18n, All labels stored in separated atom
+- ✅ Database ORM Foundation
+- ✅ API for creating / updating / getting list and one item of news
+- ✅ Client Models for API
+- ✅ Universal client request method
+- ✅ Universal Form state Higher-Order Component
+- ✅ Latest 5 news page (controlled by ORM via pagination)
+- ✅ Create / Update page
+- ✅ Fade page navigation with framer-motion
+- ✅ Meta tags and favicons
+
 
 ### What was not implemented:
-1. From validation
-2. Optimization for api
-3. Client news pagination
+- 🔻 Form validation
+- 🔻 Optimization for API
+- 🔻 Client news pagination
+- 🔻 Tests
 
 # How to run:
 1. yarn
