@@ -1,0 +1,91 @@
+{
+  "root": true,
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "globals": {
+    "JSX": true,
+    "react": true,
+    "fetch": true
+  },
+  "ignorePatterns": [
+    "node_modules/*",
+    ".next/*",
+    "next.config.js"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "extends": [
+    "eslint:recommended",
+    "next",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
+    "plugin:prettier/recommended",
+    "plugin:jsx-a11y/recommended",
+    "airbnb",
+    "airbnb-typescript",
+    "airbnb/hooks",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "prettier"
+  ],
+  "rules": {
+    // No need to import React when using Next.js
+    "react/react-in-jsx-scope": "off",
+    // It's ok to use template expressions
+    "@typescript-eslint/restrict-template-expressions": "off",
+    // It's ok to reassign params
+    "no-param-reassign": "off",
+    // We love use spreading
+    "react/jsx-props-no-spreading": "off",
+    // This rule is not compatible with Next.js <Link /> components
+    "jsx-a11y/anchor-is-valid": "off",
+    // We are not interested in consistent types of function components.
+    "react/function-component-definition": "off",
+    // To use styled components
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": "off",
+    // Allow floating and misused promises
+    "@typescript-eslint/no-floating-promises": "off",
+    "@typescript-eslint/no-misused-promises": "off",
+    // Allow unsafe argument
+    "@typescript-eslint/no-unsafe-argument": "off",
+    // Allow unsafe call
+    "@typescript-eslint/no-unsafe-call": "off",
+    // Allow unsafe assignment ( ex: when assign imported images )
+    "@typescript-eslint/no-unsafe-assignment": "off",
+    // Allow unsafe member access
+    "@typescript-eslint/no-unsafe-member-access": "off",
+    // Allow unsafe return
+    "@typescript-eslint/no-unsafe-return": "off",
+    // We don't care about using defaultProps for your component's props that are not required
+    "react/require-default-props": "off",
+    // No need to use React prop types
+    "react/prop-types": "off",
+    // We can live without await
+    "@typescript-eslint/require-await": "off",
+    // We control deps by oursefs
+    "react-hooks/exhaustive-deps": "off",
+    // We are ok to return nothing
+    "consistent-return": "off",
+    // Allow non deep cycle imports
+    "import/no-cycle": [2, { "ignoreExternal": true, "maxDepth": 2 }],
+    // Allow components as props
+    "react/no-unstable-nested-components": [
+      "error",
+      { "allowAsProps": true  }
+    ],
+    // Allow jsx syntax in js files (for next.js project)
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [".js", ".jsx", ".tsx", ".ts"]
+      }
+    ]
+  }
+}

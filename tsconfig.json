@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "module": "esnext",
+    "emitDecoratorMetadata": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "@api/*": ["./api/*"],
+      "@atoms/*": ["./atoms/*"],
+      "@contexts/*": ["./contexts/*"],
+      "@utils/*": ["./utils/*"],
+      "@components/*": ["./components/*"],
+      "@constants/*": ["./constants/*"],
+      "@images/*": ["./images/*"],
+      "@public/*": ["./public/*"],
+      "@prisma/*": ["./prisma/*"],
+      "@helpers/*": ["./helpers/*"],
+      "@labels": ["./store/labels/index.ts"],
+      "@store/*": ["./store/*"],
+      "@svg/*": ["./images/svg/*"],
+      "@png/*": ["./images/png/*"],
+      "@gif/*": ["./images/gif/*"],
+      "@styles/*": ["./styles/*"],
+      "@forms/*": ["./forms/*"],
+      "@forms": ["./forms/index.ts"],
+      "@interfaces/*": ["./interfaces/*"]
+    },
+    "incremental": true
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": ["**/node_modules"]
+}
